@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd /var/lib/cloud9/ENGI301/lightsaber/lights
+
+./configure_pins.sh
+
+PYTHONPATH=/var/lib/cloud9/ENGI301/lightsaber/lights/ python3 led_strip_test.py
