@@ -2,6 +2,7 @@
 ## ENGI301 lightsaber project (in progress)
 
 The files in this repository contain the code required to fun the different functions of the lightsaber.
+Link to the Hackster page describing the project: https://www.hackster.io/mustafa-latif/edes301-lightsaber-2d389d
 
 My portion of the project focused on functionality of the button control and the LED light strips. The file lightsaber_lights.py encodes for the lights to turn on upon a button press, change colors upon further consecutive button presses, and turn off when the button is held.
 
