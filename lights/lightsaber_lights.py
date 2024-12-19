@@ -1,3 +1,55 @@
+"""
+--------------------------------------------------------------------------
+Lightsaber Lights
+--------------------------------------------------------------------------
+License:   
+Copyright 2024 - Mustafa Latif
+
+Redistribution and use in source and binary forms, with or without 
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, 
+this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice, 
+this list of conditions and the following disclaimer in the documentation 
+and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its contributors 
+may be used to endorse or promote products derived from this software without 
+specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE 
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF 
+THE POSSIBILITY OF SUCH DAMAGE.
+--------------------------------------------------------------------------
+
+Script that will code for functionality of LED strips implemented into a 
+lightsaber project. The code will:
+
+- turn the LED strips on when the button is pressed
+- switch through a set color list upon pressing the button
+- turn the LED strips off when the button is held
+
+Notes:
+- ACTIVATION_DELAY will alter how fast the LEDs ignite and deactivate
+- COLOR_LIST contains RGB values of the colors that the blade will cycle
+through
+- LEDs were indexed based on two strips connected in sequence running in
+opposite directions based on physical implementation. The blade will turn
+on and off directionally to mimic lightsaber function.
+
+--------------------------------------------------------------------------
+"""
+
 import time
 import Adafruit_BBIO.GPIO as GPIO
 from opc import Client
